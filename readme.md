@@ -7,14 +7,18 @@ docker build -t docker-demo .
 docker tag docker-demo mpoots/docker-demo
 docker push mpoots/docker-demo
 
-#remove local
+#remove local:
+
 docker rmi docker-demo mpoots/docker-demo
 
-#pull image from docker hub and run it with port mapped to 8080
+#pull image from docker hub and run it with port mapped to 8080:
+
 docker run -p 8080:8080 mpoots/docker-demo
 
-#get images
+#get images:
+
 docker ps
 
-# use image
+# use image:
+
 docker stop <image>
